@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >  
+    
+	    <FrameLayout
+	        xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:layout_height="wrap_content" 
+			    android:layout_width="0dp" 
+			    android:layout_weight="1"
+	        android:orientation="vertical" >
+	        
+		    <org.dobots.zmqvideochat.gui.CameraPreview
+		        android:id="@+id/svCameraUser"
+			    android:scaleType="fitCenter" 
+			    android:layout_gravity="center_horizontal" 
+			    android:layout_height="wrap_content" 
+			    android:layout_width="match_parent" 
+			    android:adjustViewBounds="true" />
+		    
+		    <TextView 
+		        android:id="@+id/lblFPSUser"
+			    android:scaleType="fitCenter"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+	            android:textColor="#e0ff0000"
+	            android:textSize="24sp" />
+	        
+	    </FrameLayout>
+    
+	    <FrameLayout 
+	        xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:layout_height="wrap_content" 
+			    android:layout_width="0dp" 
+			    android:layout_weight="1"
+	        android:orientation="vertical" >
+		    
+		    <org.dobots.zmqvideochat.gui.ScalableSurfaceView
+		        android:id="@+id/svCameraPartner"
+			    android:scaleType="fitCenter" 
+			    android:layout_gravity="center_horizontal" 
+			    android:layout_height="wrap_content" 
+			    android:layout_width="match_parent" 
+			    android:adjustViewBounds="true"/>
+	        
+		    <TextView 
+		        android:id="@+id/lblFPSPartner"
+			    android:scaleType="fitCenter"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+	            android:textColor="#e0ff0000"
+	            android:textSize="24sp" />
+	        
+	    </FrameLayout>
+    
+    </LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:orientation="horizontal" >
+
+	        <ListView
+	            android:id="@+id/lvChatView"
+	            android:layout_width="0dp"
+	    		android:layout_weight="3"
+	            android:layout_height="match_parent"
+	    		android:layout_marginLeft="5dp" >
+	        </ListView>
+	        
+			<View
+		        android:layout_width="2dip"
+		        android:layout_height="match_parent"
+		        android:background="#FF909090" />
+
+	        <ListView
+	            android:id="@+id/lvUsers"
+	            android:layout_width="0dp"
+	    		android:layout_weight="1"
+	            android:layout_height="match_parent"
+	    		android:layout_marginLeft="5dp" >
+	        </ListView>
+
+	</LinearLayout>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+        
+	    <EditText
+	        android:id="@+id/edtMessage"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+        	android:layout_weight="3"
+	        android:layout_marginRight="26dp"
+	        android:ems="10"
+	        android:inputType="textMultiLine"
+	        android:text="Test" />
+
+	    <Button
+	        android:id="@+id/btnSend"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+        	android:layout_weight="1"
+	        android:text="Send" />
+        
+    </LinearLayout>
+
+</LinearLayout>

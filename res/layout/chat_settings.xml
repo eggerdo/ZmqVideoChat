@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+
+    <TableRow>
+
+        <TextView
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:text="@string/nick_name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtNickName"
+            android:layout_marginRight="6dip"
+            android:inputType="text"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:text="@string/address"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtAddress"
+            android:layout_marginRight="6dip"
+            android:inputType="textUri"
+            android:singleLine="true" />
+
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:text="@string/chat_port"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtChatPort"
+            android:layout_marginRight="6dip"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:text="@string/video_port"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtVideoPort"
+            android:layout_marginRight="6dip"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:text="@string/clients_port"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtClientsPort"
+            android:layout_marginRight="6dip"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+
+    </TableRow>
+</TableLayout>
+    
