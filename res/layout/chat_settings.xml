@@ -74,11 +74,11 @@
         <TextView
             android:paddingLeft="6dip"
             android:paddingRight="6dip"
-            android:text="@string/clients_port"
+            android:text="@string/event_port"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
-            android:id="@+id/txtClientsPort"
+            android:id="@+id/txtEventPort"
             android:layout_marginRight="6dip"
             android:inputType="numberDecimal"
             android:singleLine="true" />

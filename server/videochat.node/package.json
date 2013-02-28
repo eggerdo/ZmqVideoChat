@@ -1,0 +1,11 @@
+{
+  "name": "videochat.node",
+  "version": "0.1.0",
+  "description": "Video-Chat Server",
+  "main": "videochat_server.js",
+  "author":"Dominik Egger",
+  "devDependencies": {
+    "zmq": "2.2.x"
+  },
+  "contributors": []
+}

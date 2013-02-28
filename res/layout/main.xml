@@ -9,9 +9,9 @@
     
 	    <FrameLayout
 	        xmlns:android="http://schemas.android.com/apk/res/android"
-			    android:layout_height="wrap_content" 
-			    android:layout_width="0dp" 
-			    android:layout_weight="1"
+			android:layout_height="wrap_content" 
+			android:layout_width="0dp" 
+			android:layout_weight="1"
 	        android:orientation="vertical" >
 	        
 		    <org.dobots.zmqvideochat.gui.CameraPreview
@@ -34,9 +34,9 @@
     
 	    <FrameLayout 
 	        xmlns:android="http://schemas.android.com/apk/res/android"
-			    android:layout_height="wrap_content" 
-			    android:layout_width="0dp" 
-			    android:layout_weight="1"
+			android:layout_height="wrap_content" 
+			android:layout_width="0dp" 
+			android:layout_weight="1"
 	        android:orientation="vertical" >
 		    
 		    <org.dobots.zmqvideochat.gui.ScalableSurfaceView
@@ -97,18 +97,16 @@
 	        android:id="@+id/edtMessage"
 	        android:layout_width="0dp"
 	        android:layout_height="wrap_content"
-        	android:layout_weight="3"
-	        android:layout_marginRight="26dp"
+        	android:layout_weight="4"
 	        android:ems="10"
-	        android:inputType="textMultiLine"
-	        android:text="Test" />
+	        android:inputType="textMultiLine" />
 
 	    <Button
 	        android:id="@+id/btnSend"
 	        android:layout_width="0dp"
-	        android:layout_height="wrap_content"
+	        android:layout_height="match_parent"
         	android:layout_weight="1"
-	        android:text="Send" />
+	        android:text="@string/send" />
         
     </LinearLayout>
 

@@ -15,14 +15,14 @@ public class ChatTypes {
 	public static final String CHAT_PREFS_ADDRESS 		= "address";
 	public static final String CHAT_PREFS_CHATPORT 		= "chat_port";
 	public static final String CHAT_PREFS_VIDEOPORT 	= "video_port";
-	public static final String CHAT_PREFS_CLIENTSPORT 	= "clients_port";
+	public static final String CHAT_PREFS_EVENTPORT 	= "event_port";
 	public static final String CHAT_PREFS_NICKNAME		= "nickname";
 	
 	public static final String CHAT_DEFAULT_ADDRESS 	= null;
 	public static final String CHAT_DEFAULT_CHATPORT 	= null;
 	public static final String CHAT_DEFAULT_VIDEOPORT 	= null;
 	public static final String CHAT_DEFAULT_NICKNAME	= null;
-	public static final String CHAT_DEFAULT_CLIENTSPORT = null;
+	public static final String CHAT_DEFAULT_EVENTPORT 	= null;
 
 	
 }

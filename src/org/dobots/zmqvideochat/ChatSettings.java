@@ -29,7 +29,7 @@ public class ChatSettings {
 	private String m_strAddress;
 	private String m_strChatPort;
 	private String m_strVideoPort;
-	private String m_strClientsPort;
+	private String m_strEventPort;
 
 	private boolean m_bSettingsValid;
 
@@ -91,9 +91,9 @@ public class ChatSettings {
     			editText = (EditText) dialog.findViewById(R.id.txtVideoPort);
     			editText.setText(m_strVideoPort);
     		}
-    		if (m_strClientsPort != null) {
-    			editText = (EditText) dialog.findViewById(R.id.txtClientsPort);
-    			editText.setText(m_strClientsPort);
+    		if (m_strEventPort != null) {
+    			editText = (EditText) dialog.findViewById(R.id.txtEventPort);
+    			editText.setText(m_strEventPort);
     		}
     	}
     }
@@ -104,14 +104,14 @@ public class ChatSettings {
 		m_strAddress = prefs.getString(ChatTypes.CHAT_PREFS_ADDRESS, ChatTypes.CHAT_DEFAULT_ADDRESS);
 		m_strChatPort = prefs.getString(ChatTypes.CHAT_PREFS_CHATPORT, ChatTypes.CHAT_DEFAULT_CHATPORT);
 		m_strVideoPort = prefs.getString(ChatTypes.CHAT_PREFS_VIDEOPORT, ChatTypes.CHAT_DEFAULT_VIDEOPORT);
-		m_strClientsPort = prefs.getString(ChatTypes.CHAT_PREFS_CLIENTSPORT, ChatTypes.CHAT_DEFAULT_CLIENTSPORT);
+		m_strEventPort = prefs.getString(ChatTypes.CHAT_PREFS_EVENTPORT, ChatTypes.CHAT_DEFAULT_EVENTPORT);
 		m_strNickName = prefs.getString(ChatTypes.CHAT_PREFS_NICKNAME, ChatTypes.CHAT_DEFAULT_NICKNAME);
 		
 		// settings only valid if all values assigned
 		m_bSettingsValid = (((m_strAddress != "") && (m_strAddress != null)) &&
 							((m_strChatPort != "") && (m_strChatPort != null)) &&
 							((m_strVideoPort != "") && (m_strVideoPort != null)) &&
-							((m_strClientsPort != "") && (m_strClientsPort != null)) &&
+							((m_strEventPort != "") && (m_strEventPort != null)) &&
 							((m_strNickName != "") && (m_strNickName != null)));
 		return m_bSettingsValid;
     }
@@ -124,8 +124,8 @@ public class ChatSettings {
 		String strChatPort = editText.getText().toString();
     	editText = (EditText) m_dlgSettings.findViewById(R.id.txtVideoPort);
 		String strVideoPort = editText.getText().toString();
-    	editText = (EditText) m_dlgSettings.findViewById(R.id.txtClientsPort);
-		String strClientsPort = editText.getText().toString();
+    	editText = (EditText) m_dlgSettings.findViewById(R.id.txtEventPort);
+		String strEventPort = editText.getText().toString();
     	editText = (EditText) m_dlgSettings.findViewById(R.id.txtNickName);
 		String strNickName = editText.getText().toString();
 		
@@ -135,7 +135,7 @@ public class ChatSettings {
 		editor.putString(ChatTypes.CHAT_PREFS_ADDRESS, strAddress);
 		editor.putString(ChatTypes.CHAT_PREFS_CHATPORT, strChatPort);
 		editor.putString(ChatTypes.CHAT_PREFS_VIDEOPORT, strVideoPort);
-		editor.putString(ChatTypes.CHAT_PREFS_CLIENTSPORT, strClientsPort);
+		editor.putString(ChatTypes.CHAT_PREFS_EVENTPORT, strEventPort);
 		editor.putString(ChatTypes.CHAT_PREFS_NICKNAME, strNickName);
 		editor.commit();
 		
@@ -159,7 +159,7 @@ public class ChatSettings {
 	}
 	
 	public int getEventPort() {
-		return Integer.valueOf(m_strClientsPort);
+		return Integer.valueOf(m_strEventPort);
 	}
 	
 	public String getNickName() {
