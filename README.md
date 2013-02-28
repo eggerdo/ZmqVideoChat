@@ -46,7 +46,7 @@ Upon startup, first thing to do is edit the connection settings from the menu.
 
 ### Settings
 
-![Settings Dialog](https://raw.github.com/eggerdo/arduino_blue/master/doc/settings.png)
+![Settings Dialog](https://raw.github.com/eggerdo/ZmqVideoChat/master/doc/settings.png)
 
 Choose a nickname for yourself (the nickname should be unique, but as of now no checks are made to ensure that), set the address of the server you are running the videchat.node and enter the ports that you use on the server. By default this would be:
 
@@ -58,7 +58,7 @@ Once the settings are saved, connection will be established. No connection statu
 
 ### Main View
 
-![Main View](https://raw.github.com/eggerdo/arduino_blue/master/doc/main_overlay.png)
+![Main View](https://raw.github.com/eggerdo/ZmqVideoChat/master/doc/main_overlay.png)
 
 The application consists of 3 main areas. On top is the Video area, on the left side is the chat window, on the right side is the list of currently registered users.
 
