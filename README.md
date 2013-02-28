@@ -27,38 +27,38 @@ Now you can run the node:
 
 By default, the server uses the following ports:
 
-Chat Incoming	Port 4000
-Chat Outgoing	Port 4001
-Video Incoming	Port 4010
-Video Outgoing	Port 4011
-Event Incoming	Port 4020
-Event Outgoing	Port 4021
+- Chat Incoming	Port 4000
+- Chat Outgoing	Port 4001
+- Video Incoming Port 4010
+- Video Outgoing Port 4011
+- Event Incoming Port 4020
+- Event Outgoing Port 4021
 
-Alternatively, the incoming ports can be defined as commandline arguments, while the outgoing ports are always set to incoming port + 1
+Alternatively, the incoming ports can be defined as commandline arguments when starting the node, while the outgoing ports are always set to incoming port +1
 
 	$ node videochat_server.js 5000 5002 5004
 
 ## Android App
 
-The Android App can be compiled from source or downloaded from the [Android market]()
+The Android App can be compiled from source or downloaded from the Android market as [ZMQ Video Chat]()
 
 Upon startup, first thing to do is edit the connection settings from the menu. 
 
 ### Settings
 
-![Settings Dialog](https://raw.github.com/eggerdo/ZmqVideoChat/master/doc/settings.png)
+<img src="https://raw.github.com/eggerdo/ZmqVideoChat/master/doc/settings.png" alt="Settings Dialog" height="363" width="334" />
 
 Choose a nickname for yourself (the nickname should be unique, but as of now no checks are made to ensure that), set the address of the server you are running the videchat.node and enter the ports that you use on the server. By default this would be:
 
-Chat Port 	4000
-Video Port 	4010
-Event Port 	4020
+- Chat Port 4000
+- Video Port 4010
+- Event Port 4020
 
 Once the settings are saved, connection will be established. No connection status is available, as the design of ØMQ is done in such a way that publishers can exist without a subscriber present, thus we have no direct feedback if a connection is established. However, if you see your own nickname in the list of users, connection was successfully established. If not, select Refresh from the menu first and check the list of users again before searching for the problem.
 
 ### Main View
 
-![Main View](https://raw.github.com/eggerdo/ZmqVideoChat/master/doc/main_overlay.png)
+<img src="https://raw.github.com/eggerdo/ZmqVideoChat/master/doc/main_overlay.png" alt="Main View" height="640px" width="360px" />
 
 The application consists of 3 main areas. On top is the Video area, on the left side is the chat window, on the right side is the list of currently registered users.
 
@@ -71,6 +71,10 @@ By default the video will be unscaled and it's size depends on the smartphone of
 #### Chat
 
 Sent and received chat messages will be displayed in the chat window. 
+
+#### Users
+
+The nicknames of all currently registered users will be displayed. By selecting a nickname from the list, the video of this user will be displayed as partner. Selecting the name again will stop the video feed.
 
 ## Conclusion
 
