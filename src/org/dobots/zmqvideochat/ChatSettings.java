@@ -109,9 +109,9 @@ public class ChatSettings {
 		
 		// settings only valid if all values assigned
 		m_bSettingsValid = (((m_strAddress != "") && (m_strAddress != null)) &&
-							((m_strChatPort != "") && (m_strChatPort != null)) &&
-							((m_strVideoPort != "") && (m_strVideoPort != null)) &&
-							((m_strEventPort != "") && (m_strEventPort != null)) &&
+							(Utils.isInteger(m_strChatPort)) &&
+							(Utils.isInteger(m_strVideoPort)) &&
+							(Utils.isInteger(m_strEventPort)) &&
 							((m_strNickName != "") && (m_strNickName != null)));
 		return m_bSettingsValid;
     }

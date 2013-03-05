@@ -2,6 +2,7 @@ package org.dobots.zmqvideochat.gui;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.util.List;
 
 import android.content.Context;
 import android.graphics.ImageFormat;
@@ -99,13 +100,9 @@ public class CameraPreview extends ScalableSurfaceView implements SurfaceHolder.
     }  
   
     public void surfaceChanged(SurfaceHolder holder, int format, int w, int h) {  
-        // Now that the size is known, set up the camera parameters and begin  
-        // the preview.  
-        mParameters.setPreviewSize(w, h);  
-        mPreviewSize.width = w;
-        mPreviewSize.height = h; 
-        //set the camera's settings  
-        mCamera.setParameters(mParameters);  
+        // Now that the surface is created, start the preview. 
+    	// Note: not all phones support arbitrary preview sizes, so we leave
+    	// the default size for now
         mCamera.startPreview();  
     }  
     @Override  

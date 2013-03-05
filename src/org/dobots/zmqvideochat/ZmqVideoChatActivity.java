@@ -111,6 +111,7 @@ public class ZmqVideoChatActivity extends Activity {
 		m_oChatHandler.setChatRoom(m_strChannel);
 		
 		m_oVideoHandler = new VideoHandler(ctx, m_oSettings, uiHandler);
+		m_oVideoHandler.setDebug(m_bDebug);
 		
 		m_oEventHandler = new EventHandler(ctx, m_oSettings, uiHandler);
 		

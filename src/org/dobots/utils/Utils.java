@@ -35,4 +35,22 @@ public class Utils {
         }
     }
 
+	public static boolean isInteger(String str) {
+		try {
+			Integer.valueOf(str);
+		} catch (NumberFormatException e) {
+			return false;
+		}
+		return true;
+	}
+	
+	public static boolean isNumeric(String str) {
+		try {
+			Double.valueOf(str);
+		} catch (NumberFormatException e) {
+			return false;
+		}
+		return true;
+	}
+
 }
