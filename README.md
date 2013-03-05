@@ -40,7 +40,7 @@ Alternatively, the incoming ports can be defined as commandline arguments when s
 
 ## Android App
 
-The Android App can be compiled from source or downloaded from the Android market as [ZMQ Video Chat]()
+The Android App can be compiled from source or downloaded from the Android market as [ZMQ Video Chat](https://play.google.com/store/apps/details?id=org.dobots.zmqvideochat)
 
 Upon startup, first thing to do is edit the connection settings from the menu. 
 
