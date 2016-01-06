@@ -9,7 +9,7 @@
   "main": "videochat_server.js",
   "author":"Dominik Egger",
   "dependencies": {
-    "zmq": "2.2.x"
+    "zmq": "*"
   },
   "contributors": []
 }
